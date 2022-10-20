@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lets plus!</h1>
+    <form onsubmit="doSum(); return false">
+        Num1: <input type="number" id="Num1">
+        <br>
+        Num2: <input type="number" id="Num2">
+        <br>
+        <button type="submit">Do Sum</button>
+    </form>
+    <h1 id="result"></h1>
+    <script>
+        function doSum () {
+            console.log ("I am doSum function running");
+
+            let Num1 = document.getElementById("Num1").value;
+            let Num2 = document.getElementById("Num2").value;
+
+            Num1 = Number(Num1);
+            Num2 = Number(Num2);
+            
+            let sumresult = Num1 + Num2;
+
+            console.log("sumresult is" + sumresult);
+            document.getElementById("result").innerHTML = sumresult
+        }
+
+
+    </script>
+
+<h1>Lets find the difference!</h1>
+<form onsubmit="doSubtract(); return false">
+    Num1: <input type="number" id="Num3">
+    <br>
+    Num2: <input type="number" id="Num4">
+    <br>
+    <button type="submit">Do Subtract</button>
+</form>
+<h1 id="total"></h1>
+<script>
+    function doSubtract () {
+        console.log ("I am doSubtract function running");
+
+        let Num3 = document.getElementById("Num3").value;
+        let Num4 = document.getElementById("Num4").value;
+
+        Num3 = Number(Num3);
+        Num4 = Number(Num4);
+        
+        let subtractresult = Num3 - Num4;
+
+        console.log("subtractresult is" + subtractresult);
+        document.getElementById("total").innerHTML = subtractresult
+    }
+
+
+</script>
+
+<h1>Lets multiply!</h1>
+<form onsubmit="domultiply(); return false">
+    Num1: <input type="number" id="Num5">
+    <br>
+    Num2: <input type="number" id="Num6">
+    <br>
+    <button type="submit">Do multiply</button>
+</form>
+<h1 id="altogether"></h1>
+<script>
+    function domultiply () {
+        console.log ("I am domultiply function running");
+
+        let Num5 = document.getElementById("Num5").value;
+        let Num6 = document.getElementById("Num6").value;
+
+        Num5 = Number(Num5);
+        Num6 = Number(Num6);
+        
+        let multiplyresult = Num5 * Num6;
+
+        console.log("multiplyresult is" + multiplyresult);
+        document.getElementById("altogether").innerHTML = multiplyresult
+    }
+</script>
+
+<h1>Lets divide!</h1>
+<form onsubmit="dodivide(); return false">
+    Num1: <input type="number" id="Num7">
+    <br>
+    Num2: <input type="number" id="Num8">
+    <br>
+    <button type="submit">Do Divide</button>
+</form>
+<h1 id="answer"></h1>
+<script>
+    function dodivide (){
+        console.log ("I am dodivide function running");
+        let Num7 = document.getElementById("Num7").value;
+        let Num8 = document.getElementById("Num8").value;
+        Num7 = Number(Num7);
+        Num8 = Number(Num8);
+        let divideresult = Num7 / Num8;
+        console.log("divideresult is" + divideresult);
+        document.getElementById("answer").innerHTML = divideresult
+    }
+</script>
+</body>
+</html>
